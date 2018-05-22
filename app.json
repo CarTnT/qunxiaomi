@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/my_parcp/my_parcp",
+    "pages/my_init/my_init",
+    "pages/activity/activity"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#fff",
+    "navigationBarTitleText": "群小秘",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "text": "我参与的",
+        "iconPath": "src/icons/Category_grey.png",
+        "selectedIconPath": "src/icons/Category_blue.png",
+        "pagePath": "pages/my_parcp/my_parcp"
+      },
+      {
+        "text": "我发起的",
+        "iconPath": "src/icons/Category_grey.png",
+        "selectedIconPath": "src/icons/Category_blue.png",
+        "pagePath": "pages/my_init/my_init"
+      }
+    ]
+  }
+}

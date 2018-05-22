@@ -1,0 +1,59 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">已报名</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">未报名</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="600"  bindchange="swiperTab">
+    <swiper-item scroll-y="true" style="display:flex;">
+      <scroll-view class="page-body" scroll-y="true">
+        <navigator url="../activity/activity?id={{item.id}}" wx:for="{{current_signed_pos}}">
+          <view class="date_headline">{{item.date}}</view>
+          <view class="item_pos">
+            <image class="poster" src="{{item.starter_icon}}"></image>
+            <view class="meta">
+              <text class="title">{{item.headline}}</text>
+              <text class="subtitle">{{item.note}}</text>
+              <text class="subtitle">喜欢:{{item.likes}} 参与:{{item.signed_num}}</text>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../activity/activity?id={{item.id}}" wx:for="{{current_signed_pre}}">
+          <view class="date_headline">{{item.date}}</view>
+          <view class="item">
+            <image class="poster" src="{{item.starter_icon}}"></image>
+            <view class="meta">
+              <text class="title">{{item.headline}}</text>
+              <text class="subtitle">{{item.note}}</text>
+              <text class="subtitle">喜欢:{{item.likes}} 参与:{{item.signed_num}}</text>
+            </view>
+          </view>
+        </navigator>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item scroll-y="true" style="display:flex;">
+      <scroll-view class="page-body" scroll-y="true">
+        <navigator url="../activity/activity?id={{item.id}}" wx:for="{{current_unsigned_pos}}">
+          <view class="date_headline">{{item.date}}</view>
+          <view class="item_pos">
+            <image class="poster" src="{{item.starter_icon}}"></image>
+            <view class="meta">
+              <text class="title">{{item.headline}}</text>
+              <text class="subtitle">{{item.note}}</text>
+              <text class="subtitle">喜欢:{{item.likes}} 参与:{{item.signed_num}}</text>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../activity/activity?id={{item.id}}" wx:for="{{current_unsigned_pre}}">
+          <view class="date_headline">{{item.date}}</view>
+          <view class="item">
+            <image class="poster" src="{{item.starter_icon}}"></image>
+            <view class="meta">
+              <text class="title">{{item.headline}}</text>
+              <text class="subtitle">{{item.note}}</text>
+              <text class="subtitle">喜欢:{{item.likes}} 参与:{{item.signed_num}}</text>
+            </view>
+          </view>
+        </navigator>
+      </scroll-view>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,109 @@
+page{
+  font-family: "Microsoft YaHei";
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.page-header{
+  display: flex;
+  justify-content: center;
+  border-bottom: 2rpx solid #ccc;
+  margin-bottom: 10rpx;
+}
+.page-header-text{
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size: 40rpx;
+}
+.page-body{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.item{
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.date_headline{
+  display: flex;
+}
+.item .poster{
+  width: 128rpx;
+  height: 192rpx;
+  margin-right: 20rpx;
+}
+.item .meta{
+  flex: 1;
+}
+.item .title, .item .subtitle{
+  display: block;
+  margin-bottom: 14rpx;
+}
+.item .subtitle, .item .director{
+  display: block;
+}
+.item .director, .item .actor{
+  display: block;
+}
+.item .title{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.item .subtitle{
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+.item .director{
+  font-size: 26rpx;
+  color: #999;
+}
+.item .actor{
+  font-size: 26rpx;
+  color: #999
+}
+.rating{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ff0000;
+}
+.item_pos{
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+  background-color: blue;
+}
+.item_pos .poster{
+  width: 128rpx;
+  height: 192rpx;
+  margin-right: 20rpx;
+}
+.item_pos .meta{
+  flex: 1;
+}
+.item_pos .title, .item_pos .subtitle{
+  display: block;
+  margin-bottom: 14rpx;
+}
+.item_pos .subtitle, .item_pos .director{
+  display: block;
+}
+.item_pos .director, .item_pos .actor{
+  display: block;
+}
+.item_pos .title{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.item_pos .subtitle{
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+.item_pos .director{
+  font-size: 26rpx;
+  color: #999;
+}
+.item_pos .actor{
+  font-size: 26rpx;
+  color: #999
+}
